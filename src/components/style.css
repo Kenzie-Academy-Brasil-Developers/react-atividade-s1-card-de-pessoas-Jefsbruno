@@ -1,12 +1,8 @@
-.box{
-
-    margin: 1rem;
-    width: 400px;
-    height: 300px;
-    background-color: #3a1772;
-    border-radius: 8px;
-    border: #f1f1f1 solid 1px;
-    justify-content: center;
-    cursor: pointer;
-
+.container {
+  border-radius: 8px;
+  border: solid gray;
+  margin: auto;
+  width: 20%;
+  height: 150px;
+  margin-top: 15px;
 }

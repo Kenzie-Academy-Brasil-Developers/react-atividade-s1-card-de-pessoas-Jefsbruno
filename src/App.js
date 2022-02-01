@@ -1,38 +1,32 @@
-
-import './App.css';
-import PersonNome from './components/Developer';
-
+import "./App.css";
+import Card from "./components/Developor";
 
 function App() {
-
-  const names = {name1:'Gabriel', name2:'Filipe', name3:'Mariana'}
-  const idades = {idade1:19, idade2:28, idade3:24}
-  const paises = {pais1:'Brasil', pais2:'Itália'}
-
- 
-
-  console.log(idades.idade1)
+  const users = {
+    user1: { name: "Gabriel", age: 19, country: "Brasil" },
+    user2: { name: "Filipe", age: 28, country: "Brasil" },
+    user3: { name: "Mariana", age: 24, country: "Brasil" },
+  };
 
   return (
     <div className="App">
-      <div className="App-header">
-       <PersonNome 
-          name = {names.name1} 
-          age = {idades.idade1} 
-          country = {paises.pais1} 
-        />
-         <PersonNome 
-          name = {names.name2} 
-          age = {idades.idade2} 
-          country = {paises.pais1} 
-        />
-         <PersonNome 
-          name = {names.name3} 
-          age = {idades.idade3} 
-          country = {paises.pais2} 
-        />
+      <Card
+        name={users.user1.name}
+        age={users.user1.age}
+        country={users.user1.country}
+      />
 
-      </div>
+      <Card
+        name={users.user2.name}
+        age={users.user2.age}
+        country={users.user2.country}
+      />
+
+      <Card
+        name={users.user3.name}
+        age={users.user3.age}
+        country={users.user3.country}
+      />
     </div>
   );
 }
